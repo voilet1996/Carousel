@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style >
+    #banner{
+        width:500px;
+        height:500px; 
+        /* 这个高度可以调整，适应画面 */
+        outline: 10px solid;   
+           /* outline和border的区别 */
+        margin: 0 auto;
+    }
+    </style>
+</head>
+<body>
+    <div id= 'banner'>
+        
+    </div>
+    <script src ="./lunbotu.js">
+    </script>
+    <script>
+        var bannerDiv = document.getElementById('banner');
+        createBannerArea(bannerDiv,[
+            {imgUrl:"./images/7.png", link:"https://www.baidu.com"},
+            {imgUrl:"./images/17.png", link:"https://www.baidu.com"},
+            {imgUrl:"./images/18.png", link:"https://www.baidu.com"}
+        ])
+    </script>
+</body>
+</html>
